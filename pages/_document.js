@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           {/* Performance: Inject the page’s critical CSS in the <head> tag */}
           {this.props.styleTags}
