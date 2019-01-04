@@ -15,6 +15,18 @@ app
     // Use Express.js for routing
     const server = express();
 
+    // Pages dynamically rendered from API response
+    // need to be server-side rendered
+    server.get("/post/:id", (req, res) => {
+      const queryParams = { id: req.params.id };
+      app.render(req, res, "/post", queryParams);
+    });
+
+    server.get("/user/:id", (req, res) => {
+      const queryParams = { id: req.params.id };
+      app.render(req, res, "/user", queryParams);
+    });
+
     // All requests that reach this point can be handled normally by Next.js
     server.get("*", (req, res) => {
       return handle(req, res);

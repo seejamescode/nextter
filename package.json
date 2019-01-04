@@ -20,10 +20,12 @@
   "homepage": "https://nextter.now.sh",
   "dependencies": {
     "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-modal": "^3.8.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
