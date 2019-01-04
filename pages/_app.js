@@ -1,4 +1,5 @@
 import App, { Container } from "next/app";
+import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
 import Nav from "../components/Nav";
 
@@ -60,13 +61,18 @@ export default class Nextter extends App {
     const { Component, pageProps, router } = this.props;
 
     return (
-      <Container>
-        <Nav />
-        <Main>
-          <Component {...pageProps} router={router} />
-        </Main>
-        <GlobalStyle />
-      </Container>
+      <>
+        <Head>
+          <title>Nextter</title>
+        </Head>
+        <Container>
+          <Nav />
+          <Main>
+            <Component {...pageProps} router={router} />
+          </Main>
+          <GlobalStyle />
+        </Container>
+      </>
     );
   }
 }
