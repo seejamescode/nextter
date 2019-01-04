@@ -1,0 +1,31 @@
+{
+  "name": "nextter",
+  "version": "1.0.0",
+  "description": "A Twitter-like sample app with a perfect Google Lighthouse score.",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "nodemon -w server/**/*",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seejamescode/nextter.git"
+  },
+  "author": "James Y Rauhut <james@seejamescode.com> (https://seejamescode.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seejamescode/nextter/issues"
+  },
+  "homepage": "https://nextter.now.sh",
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
