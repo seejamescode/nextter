@@ -28,6 +28,12 @@ export default class MyDocument extends Document {
 
           {/* Progressive Web App: Provide manifest file for metadata */}
           <link rel="manifest" href="./static/manifest.json" />
+
+          {/* SEO: App description for search-engine optimization */}
+          <meta
+            name="Description"
+            content="A Twitter-like sample app with a perfect Google Lighthouse score."
+          />
         </Head>
         <body>
           <Main />
