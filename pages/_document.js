@@ -17,8 +17,17 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          {/* Inject the page’s critical CSS in the <head> tag */}
+          {/* Performance: Inject the page’s critical CSS in the <head> tag */}
           {this.props.styleTags}
+
+          {/* Progressive Web App: Match the width of app’s content with width of viewport for mobile devices */}
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          {/* Progressive Web App: Have address bar match brand colors */}
+          <meta name="theme-color" content="#B90504" />
+
+          {/* Progressive Web App: Provide manifest file for metadata */}
+          <link rel="manifest" href="./static/manifest.json" />
         </Head>
         <body>
           <Main />

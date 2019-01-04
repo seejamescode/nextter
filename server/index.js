@@ -15,6 +15,11 @@ app
     // Use Express.js for routing
     const server = express();
 
+    // Progressive Web App: Route for the service worker that next-offline creates
+    server.use("/service-worker.js", (req, res) => {
+      app.serveStatic(req, res, join(__dirname, "../.next/service-worker.js"));
+    });
+
     // Pages dynamically rendered from API response
     // need to be server-side rendered
     server.get("/post/:id", (req, res) => {
