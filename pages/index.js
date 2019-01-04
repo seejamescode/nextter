@@ -1,4 +1,5 @@
 import fetch from "isomorphic-unfetch";
+import Anchor from "../components/Anchor";
 import Modal from "../components/Modal";
 import Posts from "../components/Posts";
 
@@ -8,13 +9,13 @@ const Index = props => (
     <p>
       A Twitter-like sample app with a perfect Google Lighthouse score. Check
       out the{" "}
-      <a
+      <Anchor
         href="https://github.com/seejamescode/nextter"
         rel="noopener noreferrer"
         target="_blank"
       >
         <strong>source code</strong>
-      </a>{" "}
+      </Anchor>{" "}
       to figure out how it all works. Steps of creating the project are broken
       up in the commits.
     </p>

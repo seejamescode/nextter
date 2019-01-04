@@ -21,6 +21,7 @@ Must have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) a
 ## Technologies Used
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Styled Components](https://www.styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress
 - [Next.js](https://nextjs.org/) - A minimalistic framework for server-rendered React applications
 - [Node.js](https://nodejs.org) for the server
 - [Express.js](https://expressjs.com/) for the server’s routing
